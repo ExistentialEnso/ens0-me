@@ -1,5 +1,11 @@
 import Link from '../components/Link'
 import Heading from '../components/Heading'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Thorne | gaming',
+  description: 'Thorne is a passionate gamer who often streams.',
+}
 
 export default function Gaming() {
   return (

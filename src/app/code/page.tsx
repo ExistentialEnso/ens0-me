@@ -1,8 +1,14 @@
 import React from 'react'
+import type { Metadata } from 'next'
 
 import Heading from '../components/Heading'
 import Link from '../components/Link'
 import Image from 'next/image'
+
+export const metadata: Metadata = {
+    title: 'Thorne | code',
+    description: 'Thorne is an accomplished software engineer, and here is a sampling of work she has done.',
+}
 
 const nfts = [
     {
