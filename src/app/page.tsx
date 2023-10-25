@@ -33,7 +33,7 @@ export default function Home() {
         <Heading size={2}>👩🏻‍💻 software engineer &amp; tech lead</Heading>
 
         <p className="mb-6">
-            As an eight-year-old in the 90s, I started learning how to program C++, quickly also moving onto building websites &em; back when JavaScript was a total nightmare. Since then, I have earned well over a decade of professional tech experience, including three years as Chief Technology Officer of a Y Combinator-backed startup, CrowdMed.
+            As an eight-year-old in the 90s, I started learning how to program C++, quickly also moving onto building websites, back when JavaScript was a total nightmare. Since then, I have earned well over a decade of professional tech experience, including three years as Chief Technology Officer of a Y Combinator-backed startup, CrowdMed.
         </p>
 
         <p className="mb-6">
