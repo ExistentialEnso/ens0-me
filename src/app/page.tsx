@@ -12,7 +12,7 @@ export default function Home() {
         <Heading size={3}>ens0 (.me/.eth/.tez) 🌸 she/her</Heading>
 
         <p className="mb-12">
-            Renaissance woman with a diverse array of expertise and successes. Primary passions are coding and writing. Always learning, always creating, always building. Dedicated to building a better, more inclusive world for all.
+            Renaissance woman with a diverse array of expertise and successes. Primary passions are coding and writing. Always learning, always creating, always building. Dedicated to building a better, more inclusive world for all. Proudly trans &amp; bisexual.
         </p>
 
         <Image
@@ -37,7 +37,7 @@ export default function Home() {
         </p>
 
         <p className="mb-6">
-            These days, I head up the tech side of things at smol farm, an indie creative studio I started with my girlfriend. For examples of my work, check out the <Link href="/code">code</Link> page.
+            These days, I head up the tech side of things at smol farm, an indie creative studio I started with my girlfriend, where we make things like games and digital collectibles. For examples of my work, check out the <Link href="/code">code</Link> page.
         </p>
 
         <div className="mb-12 px-3 w-full md:w-1/2 inline-block align-top">

@@ -138,7 +138,7 @@ const Code = () => {
             <Heading size={2}>🏗️ this site</Heading>
 
             <p className="mb-8">
-                This site itself is a custom-built Next/React/TypeScript app.
+                This site itself is a custom-built app using Next, React, and TypeScript.
             </p>
 
             <br />
