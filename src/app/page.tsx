@@ -1,113 +1,71 @@
 import Image from 'next/image'
+import Link from 'next/link'
+import Heading from './components/Heading'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
+    <main className="container mx-auto pt-12 px-8">
+        <Image width={192} height={192} src="/selfie.jpg" className="rounded-full hidden lg:block lg:float-left m-8 w-48" alt="Selfie of me." />
+        <Image width={192} height={192} src="/natsuko.png" className="rounded-full hidden lg:block lg:float-right m-8 w-48" alt="Natsuko, a Galverse NFT of mine." />
+
+        <Heading size={1}>Thorne</Heading>
+        <Heading size={3}>ens0 (.me/.eth/.tez) 🌸 she/her</Heading>
+
+        <p className="mb-12">
+            Renaissance woman with a diverse array of expertise and successes. Primary passions are coding and writing. Always learning, always creating, always building. Dedicated to building a better, more inclusive world for all.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+            width={192}
+            height={192}
+            src="/selfie.jpg"
+            className="rounded-full lg:hidden float-left m-2 w-4/12"
+            alt="Selfie of me." />
+        <Image
+            width={192}
+            height={192}
+            src="/natsuko.png"
+            className="rounded-full lg:hidden
+            float-right m-2 w-4/12" alt="Natsuko, a Shinsei Galverse pfp of mine." />
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <div className="clear-both"></div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        <Heading size={2}>👩🏻‍💻 software engineer &amp; tech lead</Heading>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+        <p className="mb-6">
+            As an eight-year-old in the 90s, I started building websites and learning how to program C++. Since then, I have earned over a decade of professional tech experience and over two decades of total dev experience, including spending three years as Chief Technology Officer of a Y Combinator-backed startup.
+        </p>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <p className="mb-6">
+            These days, I head up the tech side of things at <Link href="https://smol.farm">smol farm</Link>, an indie creative studio I started with my girlfriend. For examples of my work, check out the <Link href="/projects">code</Link> page.
+        </p>
+
+        <div className="mb-12 px-3 w-full md:w-1/2 inline-block align-top">
+            <h3 className="text-2xl mb-2">Languages of Focus</h3>
+            <ul className="list-disc ml-4">
+                <li>TypeScript</li>
+                <li>C#</li>
+                <li>Rust</li>
+                <li>Solidity</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+
+        <div className="mb-12 px-3 w-full md:w-1/2 inline-block align-top">
+            <h3 className="text-2xl mb-2">Areas of Focus</h3>
+            <ul className="list-disc ml-4">
+                <li>Web & Mobile Apps</li>
+                <li>Artificial Intelligence</li>
+                <li>Indie Game Dev</li>
+                <li>Blockchains</li>
+            </ul>
+        </div>
+
+        <Heading size={2}>📚 writer</Heading>
+
+        <p className="mb-12">
+            Since a young age, I have also had a love of writing, both fiction and non. In 2017, I was <Link href="https://www.nytimes.com/2017/11/02/opinion/twitter-transgender-harassment-problem.html">featured in the New York Times</Link> talking about anti-trans harassment on Twitter. As part of smol farm, I am the lead writer of the <Link href="https://smol.news">smol farm Substack</Link>, which discusses everything from the technology to duck egg farming.
+        </p>
     </main>
   )
 }
