@@ -3,6 +3,7 @@ import { Radio_Canada } from 'next/font/google'
 import './globals.css'
 
 import HeaderBar from './components/HeaderBar'
+import Footer from './components/Footer'
 
 const radioCanada = Radio_Canada({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={radioCanada.className}>
         <HeaderBar />
         {children}
+        <Footer />
       </body>
     </html>
   )
