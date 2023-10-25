@@ -122,7 +122,7 @@ const Code = () => {
 
             {nfts.map(nft => {
                 return(
-                    <div key={nft.name} className="inline-block p-6 w-full lg:w-3/12 align-middle text-center text-2xl">
+                    <div key={nft.name} className="inline-block p-6 w-full lg:w-3/12 min-h-[490px] align-middle text-center text-2xl">
                         <Link href={nft.externalURL}><img src={nft.imageURL} alt={nft.name} /></Link><br />
                         <Link href={nft.externalURL}>{nft.name}</Link><br />
                         <div className="my-2 text-lg">
