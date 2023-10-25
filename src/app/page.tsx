@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from './components/Link'
 import Heading from './components/Heading'
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
         </p>
 
         <p className="mb-6">
-            These days, I head up the tech side of things at <Link href="https://smol.farm">smol farm</Link>, an indie creative studio I started with my girlfriend. For examples of my work, check out the <Link href="/projects">code</Link> page.
+            These days, I head up the tech side of things at smol farm, an indie creative studio I started with my girlfriend. For examples of my work, check out the <Link href="/code">code</Link> page.
         </p>
 
         <div className="mb-12 px-3 w-full md:w-1/2 inline-block align-top">

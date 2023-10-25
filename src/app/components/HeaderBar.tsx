@@ -8,6 +8,7 @@ const HeaderBar = () => {
     return(
         <div className="w-full p-5 bg-violet-800">
             <Link href="/" className="text-2xl lg:text-2xl font-bold text-white hover:text-violet-200 ml-6">Thorne</Link>
+            <Link href="/code" className="text-lg lg:text-lg text-white hover:text-violet-400 ml-6">code</Link>
             <Link href="/gaming" className="text-lg lg:text-lg text-white hover:text-violet-400 ml-6">gaming</Link>
         </div>
     )

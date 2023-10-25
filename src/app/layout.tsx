@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Radio_Canada } from 'next/font/google'
 import './globals.css'
 
 import HeaderBar from './components/HeaderBar'
 
-const inter = Inter({ subsets: ['latin'] })
+const radioCanada = Radio_Canada({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Thorne',
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={radioCanada.className}>
         <HeaderBar />
         {children}
       </body>

@@ -13,7 +13,7 @@ const Heading = (props: HeadingProps) => {
 
     switch(size) {
         case 1:
-            return <h1 className="text-4xl lg:text-6xl my-3">{children}</h1>
+            return <h1 className="text-3xl lg:text-6xl my-3">{children}</h1>
         case 2:
             return <h2 className="text-2xl lg:text-4xl mt-2 my-8">{children}</h2>
         default:
