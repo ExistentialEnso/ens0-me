@@ -37,7 +37,7 @@ export default function Home() {
         </p>
 
         <p className="mb-6">
-            These days, I head up the tech side of things at smol farm, an indie creative studio I started with my girlfriend, where we make things like games and digital collectibles. For examples of my work, check out the <Link href="/code">code</Link> page.
+            These days, I head up the tech side and write lore for projects at smol farm, an indie creative studio I co-founded, where we make things like games and digital collectibles. For examples of my work, check out the <Link href="/code">code</Link> page.
         </p>
 
         <div className="mb-12 px-3 w-full md:w-1/2 inline-block align-top">
@@ -54,10 +54,11 @@ export default function Home() {
         <div className="mb-12 px-3 w-full md:w-1/2 inline-block align-top">
             <h3 className="text-2xl mb-2">Areas of Focus</h3>
             <ul className="list-disc ml-4">
-                <li>Web & Mobile Apps</li>
+                <li>Web Development (React, Redux, Tailwind, & Next)</li>
+                <li>Mobile Apps</li>
                 <li>Artificial Intelligence</li>
                 <li>Indie Game Dev</li>
-                <li>Blockchains</li>
+                <li>Blockchains &amp; Smart Contracts</li>
             </ul>
         </div>
 
