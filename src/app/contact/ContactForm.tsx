@@ -45,6 +45,7 @@ const ContactForm = () => {
 
         if(errors.name || errors.email || errors.message || errors.subject) {
             setErrors(errors)
+            setSending(false)
             return
         }
 
