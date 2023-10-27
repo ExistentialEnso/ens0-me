@@ -9,7 +9,7 @@ export default function Home() {
         <Image width={192} height={192} src="/natsuko.png" className="rounded-full hidden lg:block lg:float-right m-8 w-48" alt="Natsuko, a Galverse NFT of mine." />
 
         <Heading size={1}>Thorne</Heading>
-        <Heading size={3}>ens0 (.me/.eth/.tez) 🌸 she/her</Heading>
+        <Heading size={3}>ens0 🌸 metro ATL 🌸 she/her</Heading>
 
         <p className="mb-12">
             Renaissance woman &amp; with a diverse array of expertise and successes. Primary passions are coding and writing. Always learning, always creating, always building. Dedicated to building a better, more inclusive world for all. Proudly trans &amp; bisexual.
