@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Thorne | gaming',
-  description: 'Thorne is a passionate gamer who often streams.',
+  description: 'Thorne is a passionate gamer from childhood. Watch her stream and track her gaming accomplishments!',
 }
 
 export default function Gaming() {
@@ -19,7 +19,7 @@ export default function Gaming() {
         <ul>
             <li>Xbox: <Link href="https://www.trueachievements.com/gamer/ens0plays">ens0plays</Link></li>
             <li>Steam: <Link href="https://steamcommunity.com/id/existentialenso/">ExistentialEnso</Link></li>
-            <li>PSN: ExistentialEnso</li>
+            <li>PSN: <Link href="https://www.truetrophies.com/gamer/ExistentialEnso">ExistentialEnso</Link></li>
         </ul>
     </main>
   )

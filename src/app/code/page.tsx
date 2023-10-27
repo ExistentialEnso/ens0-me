@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const nfts = [
     {
         name: "Dastardly Ducks",
-        description: "10k pfp collection that saved our farm.",
+        description: "10k pfp collection that minted out overnight.",
         externalURL: "https://dastardlyducks.com",
         imageURL: "/projects/dastardly-ducks.png",
         contract: {
