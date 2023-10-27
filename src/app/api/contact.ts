@@ -5,7 +5,7 @@ import sgMail from '@sendgrid/mail'
 const sgKey = process.env["SENDGRID_API_KEY"] || ""
 sgMail.setApiKey(sgKey)
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     // Build an object to send to SendGrid
     const msg = {
