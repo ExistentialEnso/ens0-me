@@ -6,7 +6,6 @@ export const metadata: Metadata = {
     title: 'Thorne | contact',
     description: 'Get in touch with Thorne!',
 }
-  
 
 export default function Contact() {
   return (

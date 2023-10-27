@@ -3,6 +3,14 @@ import React, { useState } from "react"
 import axios from "axios"
 import Button from "../components/Button"
 import FormInput from "../components/FormInput"
+import isEmail from 'validator/lib/isEmail'
+
+type ContactFormErrors = {
+    name?: string,
+    email?: string,
+    subject?: string,
+    message?: string,
+}
 
 const ContactForm = () => {
     const [name, setName] = useState("")
@@ -10,9 +18,36 @@ const ContactForm = () => {
     const [message, setMessage] = useState("")
     const [subject, setSubject] = useState("")
     
+    const [sending, setSending] = useState(false)
     const [sent, setSent] = useState(false)
+    const [errors, setErrors] = useState<ContactFormErrors>({})
 
-    const submit = () => {
+    const submit = async () => {
+        if(sending) {
+            return
+        }
+        setSending(true)
+
+        // Validate the form
+        const errors: ContactFormErrors = {}
+        
+        if(!name) {
+            errors.name = "Please enter your name."
+        }
+        if(!email) {
+            errors.email = "Please enter your email."
+        } else if(!isEmail(email)) {
+            errors.email = "Please enter a valid email."
+        }
+        if(!message) {
+            errors.message = "Please enter a message."
+        }
+
+        if(errors.name || errors.email || errors.message || errors.subject) {
+            setErrors(errors)
+            return
+        }
+
         const msgData = {
             name: name,
             email: email,
@@ -20,7 +55,7 @@ const ContactForm = () => {
             subject: subject
         }
 
-        axios.post("/api/contact/message/", msgData)
+        await axios.post("/api/contact/message/", msgData)
 
         setSent(true)
     }
@@ -41,6 +76,7 @@ const ContactForm = () => {
                 label="your name"
                 value={name}
                 onChange={(e) => setName((e.target as HTMLInputElement).value)}
+                error={errors.name}
                 />
 
             <FormInput
@@ -48,6 +84,7 @@ const ContactForm = () => {
                 label="your email"
                 value={email}
                 onChange={(e) => setEmail((e.target as HTMLInputElement).value)}
+                error={errors.email}
                 />
 
             <FormInput
@@ -55,6 +92,7 @@ const ContactForm = () => {
                 label="subject of your inquiry"
                 value={subject}
                 onChange={(e) => setSubject((e.target as HTMLInputElement).value)}
+                error={errors.subject}
                 />
 
             <FormInput
@@ -62,6 +100,7 @@ const ContactForm = () => {
                 label="your message"
                 value={message}
                 onChange={(e) => setMessage((e.target as HTMLInputElement).value)}
+                error={errors.message}
                 multiline
                 />
 

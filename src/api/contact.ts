@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-//import Schema from '../models'
+import model from '../model'
 import sgMail from '@sendgrid/mail'
 import { Application, Request, Response } from 'express'
 
@@ -21,12 +21,12 @@ export default (app: Application) => {
         }
 
         // Log the message to the database
-        /*await Schema.ContactMessage.create({
+        await model.ContactMessage.create({
             name: req.body.name,
             email: req.body.email,
             subject: req.body.subject,
             message: req.body.message
-        })*/
+        })
 
         // Send the message to SendGrid
         sgMail.send(msg).then(() => {
