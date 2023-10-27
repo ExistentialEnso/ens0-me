@@ -56,7 +56,7 @@ const ContactForm = () => {
             subject: subject
         }
 
-        await axios.post("/api/contact/message/", msgData)
+        await axios.post("/api/contact/", msgData)
 
         setSent(true)
     }
