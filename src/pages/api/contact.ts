@@ -29,7 +29,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     // Send the message to SendGrid
     sgMail.send(msg).then(() => {
-        res.json({})
+        res.status(200).json({})
     })
   } else {
     res.status(405).json({ message: 'Method Not Allowed' })
