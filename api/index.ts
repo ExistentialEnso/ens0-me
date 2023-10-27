@@ -1,5 +1,6 @@
 import express from 'express'
 import contact from '../src/api/contact'
+import nfts from '../src/api/nfts'
 
 const app = express()
 
@@ -7,3 +8,4 @@ const app = express()
 app.use(express.json())
 
 contact(app)
+nfts(app)

@@ -1,5 +1,7 @@
 import mongoose from 'mongoose'
 import ContactMessage from './ContactMessage'
+import NFT from './NFT'
+import NFTCategory from './NFTCategory'
 
 // Fallback URI using local MongoDB instance
 const LOCAL_URI = 'mongodb://localhost/ens0-site'
@@ -14,7 +16,9 @@ const db = mongoose.connection
 db.on('error', console.error.bind(console, 'Connection error:'))
 
 const model = {
-    ContactMessage
+    ContactMessage,
+    NFT,
+    NFTCategory
 }
 
 export default model
