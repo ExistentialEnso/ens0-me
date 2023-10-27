@@ -12,7 +12,7 @@ export default function Home() {
         <Heading size={3}>ens0 (.me/.eth/.tez) 🌸 she/her</Heading>
 
         <p className="mb-12">
-            Renaissance woman with a diverse array of expertise and successes. Primary passions are coding and writing. Always learning, always creating, always building. Dedicated to building a better, more inclusive world for all. Proudly trans &amp; bisexual.
+            Renaissance woman &amp; with a diverse array of expertise and successes. Primary passions are coding and writing. Always learning, always creating, always building. Dedicated to building a better, more inclusive world for all. Proudly trans &amp; bisexual.
         </p>
 
         <Image
@@ -64,7 +64,7 @@ export default function Home() {
         <Heading size={2}>📚 writer</Heading>
 
         <p className="mb-12">
-            Since a young age, I have also had a love of writing, both fiction and non. In 2017, I was <Link href="https://www.nytimes.com/2017/11/02/opinion/twitter-transgender-harassment-problem.html">featured in the New York Times</Link> talking about anti-trans harassment on Twitter. As part of smol farm, I am the lead writer of the <Link href="https://smol.news">smol farm gazette</Link>, a Substack which discusses everything from the technology to duck egg farming.
+            Since a young age, I have also had a love of writing, both fiction and non. In 2017, I was <Link href="https://www.nytimes.com/2017/11/02/opinion/twitter-transgender-harassment-problem.html">featured in the New York Times</Link> talking about anti-trans harassment on Twitter. As part of smol farm, I am the lead writer of the <Link href="https://smol.news">smol farm gazette</Link>, a Substack which discusses everything from the technology to small-scale agriculture.
         </p>
     </main>
   )
