@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose'
+import mongoose, { Schema, model } from 'mongoose'
 
 const NFTSchema = new Schema({
     name: String,
@@ -19,4 +19,5 @@ const NFTSchema = new Schema({
     hidden: { type: Boolean, default: false },
 })
 
-export default model('NFT', NFTSchema)
+const NFTModel = mongoose.models.NFT || model('NFT', NFTSchema)
+export default NFTModel

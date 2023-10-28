@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose'
+import mongoose, { Schema, model } from 'mongoose'
 
 const ContactMessageSchema = new Schema({
     createdAt: { type: Date, default: Date.now },
@@ -9,4 +9,5 @@ const ContactMessageSchema = new Schema({
     message: { type: String, required: true }
 })
 
-export default model('ContactMessage', ContactMessageSchema)
+const ContactMessageModel = mongoose.models.ContactMessage || model('ContactMessage', ContactMessageSchema)
+export default ContactMessageModel
