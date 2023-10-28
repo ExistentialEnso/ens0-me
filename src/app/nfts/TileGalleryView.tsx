@@ -20,6 +20,7 @@ const TileGalleryView = (props: TileGalleryViewProps) => {
 
     let i = 0
 
+    // Don't show anything if there's no NFT data provided
     if(!nfts)
         return(<></>)
     
