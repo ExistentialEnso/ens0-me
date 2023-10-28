@@ -9,7 +9,7 @@ const radioCanada = Radio_Canada({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
     title: 'Thorne',
-    description: 'Thorne is an accomplished coder, writer, gamer, and more.',
+    description: "Thorne is a geeky Renaissance woman who is an accomplished coder, writer, gamer, and more.",
 }
 
 export default function RootLayout({
