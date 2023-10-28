@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 
 import Heading from '../components/Heading'
 import Link from '../components/Link'
-import Image from 'next/image'
 
 export const metadata: Metadata = {
     title: 'Thorne | code',
@@ -138,7 +137,7 @@ const Code = () => {
             <Heading size={2}>🏗️ this site</Heading>
 
             <p className="mb-8">
-                This site itself is a custom-built app using Next, React, and TypeScript.
+                This site itself is a <Link href="https://github.com/ExistentialEnso/ens0-me">custom-built app</Link> using Next, React, and TypeScript.
             </p>
 
             <br />
