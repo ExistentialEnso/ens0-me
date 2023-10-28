@@ -1,0 +1,3 @@
+setup:
+  project: ens0-site
+  config: dev
