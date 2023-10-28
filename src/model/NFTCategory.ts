@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose'
+import mongoose, { Schema, model } from 'mongoose'
 
 const NFTCategorySchema = new Schema({
     name: String,
@@ -16,4 +16,5 @@ const NFTCategorySchema = new Schema({
     ]
 })
 
-export default model('NFTCategory', NFTCategorySchema)
+const NFTCategoryModel = mongoose.models.NFTCategory || model('NFTCategory', NFTCategorySchema)
+export default NFTCategoryModel
