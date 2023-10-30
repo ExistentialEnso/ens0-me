@@ -106,7 +106,7 @@ const ContactForm = () => {
                 />
 
             <div className="my-3">
-                <Button onClick={submit}>send message</Button>
+                <Button disabled={sending} onClick={submit}>{sending ? "sending" : "send message"}</Button>
             </div>
             
         </React.Fragment>

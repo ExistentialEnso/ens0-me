@@ -37,7 +37,7 @@ const TileGalleryView = (props: TileGalleryViewProps) => {
                     return
 
                 return(
-                    <div className="inline-block p-6 w-6/12 lg:w-3/12 align-bottom text-center text-lg lg:text-xl" key={nft.name}>
+                    <div className="inline-block p-6 w-6/12 lg:w-3/12 align-bottom text-center text-lg lg:text-xl rounded-md bg-slate-800" key={nft.name}>
                         <Link href={nft.openseaURL ?? ""}>
                             <img src={nft.previewImageURL} alt={nft.name} /><br />
                             {nft.name}<br />
@@ -46,9 +46,9 @@ const TileGalleryView = (props: TileGalleryViewProps) => {
                 )
             })}
 
-            <div className="text-center w-[100%]">
+            {nfts.length > 4 && <div className="text-center w-[100%]">
                 {!showAll && (<button type="button" className="bg-violet-500 hover:bg-violet-700 text-white text-lg font-bold py-2 px-4 rounded-full" onClick={() => setShowAll(true)}>show all</button>)}
-            </div>
+            </div>}
         </div>
     )
 }
