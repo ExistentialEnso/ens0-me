@@ -1,6 +1,12 @@
 import React from 'react'
 import Heading from '../components/Heading'
 import NFTGallery from './NFTGallery'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Thorne | NFTs',
+    description: 'Thorne has an extensive collection of NFTs she bought to keep for the art and community. Here are some of her favorites.',
+}
 
 /**
  * Component for displaying parts of Thorne's NFT collection on ens0.me.
