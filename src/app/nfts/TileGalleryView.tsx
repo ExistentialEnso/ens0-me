@@ -46,9 +46,9 @@ const TileGalleryView = (props: TileGalleryViewProps) => {
                 )
             })}
 
-            <div className="text-center w-[100%]">
+            {nfts.length > 4 && <div className="text-center w-[100%]">
                 {!showAll && (<button type="button" className="bg-violet-500 hover:bg-violet-700 text-white text-lg font-bold py-2 px-4 rounded-full" onClick={() => setShowAll(true)}>show all</button>)}
-            </div>
+            </div>}
         </div>
     )
 }
