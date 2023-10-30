@@ -37,7 +37,7 @@ export default function Home() {
         </p>
 
         <p className="mb-6">
-            These days, I head up the tech side and write lore for projects at smol farm, an indie creative studio I co-founded, where we make things like games and digital collectibles. For examples of my work, check out the <Link href="/code">code</Link> page.
+            These days, I head up the tech side and write lore for projects at <Link href="https://smol.farm">smol farm</Link>, an indie creative studio I co-founded, where we make things like games and digital collectibles. For examples of my work, check out the <Link href="/code">code</Link> page.
         </p>
 
         <div className="mb-12 px-3 w-full md:w-1/2 inline-block align-top">
