@@ -1,7 +1,8 @@
 import React from 'react'
 import model from '../../model'
-
 import TileGalleryView from './TileGalleryView'
+
+export const revalidate = 60 * 5 // 5 minutes
 
 const NFTGallery = async () => {
     const nftCategories = await model.NFTCategory.find({}, {name: 1, description: 1, nfts: 1}).populate({path: 'nfts'})
