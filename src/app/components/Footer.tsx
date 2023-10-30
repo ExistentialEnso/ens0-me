@@ -9,8 +9,8 @@ const Footer = () => {
 
     const socials = [
         { url: 'https://github.com/ExistentialEnso', label: 'GitHub' },
-        { url: 'https://linkedin.com/in/ens0', label: 'LinkedIn' },
         { url: 'https://www.reddit.com/u/existentialenso/', label: 'Reddit' },
+        { url: 'https://linkedin.com/in/ens0', label: 'LinkedIn' },
         { url: 'https://www.twitch.tv/ens0plays', label: 'Twitch' },
         { url: 'https://discord.com/users/248659552654852097', label: 'Discord' },
         
