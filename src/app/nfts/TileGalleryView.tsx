@@ -7,7 +7,6 @@ import INFTCategory from '../../interfaces/INFTCategory'
 
 type TileGalleryViewProps = {
     nftCategory: INFTCategory,
-
     children?: React.ReactNode
 }
 
@@ -18,13 +17,12 @@ const TileGalleryView = (props: TileGalleryViewProps) => {
     const { nfts, name, description } = props.nftCategory
     const [showAll, setShowAll] = useState(false)
 
-    let i = 0
-
     // Don't show anything if there's no NFT data provided
     if(!nfts)
         return(<></>)
 
     const sortedNfts = nfts.sort((a,b) => a.name.localeCompare(b.name))
+    let i = 0
     
     return (
         <div>
