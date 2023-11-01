@@ -23,6 +23,8 @@ const TileGalleryView = (props: TileGalleryViewProps) => {
     // Don't show anything if there's no NFT data provided
     if(!nfts)
         return(<></>)
+
+    const sortedNfts = nfts.sort((a,b) => a.name.localeCompare(b.name))
     
     return (
         <div>
@@ -30,7 +32,7 @@ const TileGalleryView = (props: TileGalleryViewProps) => {
 
             <p className="text-md">{description || ""}</p>
 
-            {nfts.map(nft => {
+            {sortedNfts.map(nft => {
                 i++
                 
                 if(i>4 && !showAll)
@@ -39,8 +41,8 @@ const TileGalleryView = (props: TileGalleryViewProps) => {
                 return(
                     <div className="inline-block p-6 w-6/12 lg:w-3/12 align-bottom text-center text-lg lg:text-xl rounded-md" key={nft.name}>
                         <Link href={nft.openseaURL ?? ""}>
-                            <img src={nft.previewImageURL} alt={nft.name} /><br />
-                            {nft.name}
+                            <img src={nft.previewImageURL} alt={nft.name} className="rounded-md" /><br />
+                            {nft.name}<br />
                         </Link><br />
                     </div>
                 )
