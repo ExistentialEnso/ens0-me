@@ -13,7 +13,13 @@ const NFTGallery = async () => {
                 const category = {
                     name: categoryData.name || "",
                     description: categoryData.description || "",
-                    nfts: categoryData.nfts
+                    nfts: categoryData.nfts.map((n: any) => {
+                        return {
+                            name: n.name || "",
+                            previewImageURL: n.previewImageURL || "",
+                            openseaURL: n.openseaURL || ""
+                        }
+                    })
                 }
 
                 return(
