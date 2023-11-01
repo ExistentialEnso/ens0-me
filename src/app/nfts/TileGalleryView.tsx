@@ -23,6 +23,8 @@ const TileGalleryView = (props: TileGalleryViewProps) => {
     // Don't show anything if there's no NFT data provided
     if(!nfts)
         return(<></>)
+
+    const sortedNfts = nfts.sort((a,b) => a.name.localeCompare(b.name))
     
     return (
         <div>
@@ -30,7 +32,7 @@ const TileGalleryView = (props: TileGalleryViewProps) => {
 
             <p className="text-md">{description || ""}</p>
 
-            {nfts.map(nft => {
+            {sortedNfts.map(nft => {
                 i++
                 
                 if(i>4 && !showAll)
