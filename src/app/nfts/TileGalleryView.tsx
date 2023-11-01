@@ -37,7 +37,7 @@ const TileGalleryView = (props: TileGalleryViewProps) => {
                     return
 
                 return(
-                    <div className="inline-block p-6 w-6/12 lg:w-3/12 align-bottom text-center text-lg lg:text-xl rounded-md bg-slate-800" key={nft.name}>
+                    <div className="inline-block p-6 w-6/12 lg:w-3/12 align-bottom text-center text-lg lg:text-xl rounded-md" key={nft.name}>
                         <Link href={nft.openseaURL ?? ""}>
                             <img src={nft.previewImageURL} alt={nft.name} className="rounded-md" /><br />
                             {nft.name}<br />
