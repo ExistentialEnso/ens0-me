@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Link from '../components/Link'
 import Heading from '../components/Heading'
+import Image from 'next/image'
 
 import INFTCategory from '../../interfaces/INFTCategory'
 
@@ -39,7 +40,7 @@ const TileGalleryView = (props: TileGalleryViewProps) => {
                 return(
                     <div className="inline-block p-6 w-6/12 lg:w-3/12 align-bottom text-center text-lg lg:text-xl rounded-md" key={nft.name}>
                         <Link href={nft.openseaURL ?? ""}>
-                            <img src={nft.previewImageURL} alt={nft.name} className="rounded-md" /><br />
+                            <Image src={nft.previewImageURL || ""} width={400} height={400} alt={nft.name} className="rounded-md" /><br />
                             {nft.name}<br />
                         </Link><br />
                     </div>
