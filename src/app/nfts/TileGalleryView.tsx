@@ -7,7 +7,6 @@ import INFTCategory from '../../interfaces/INFTCategory'
 
 type TileGalleryViewProps = {
     nftCategory: INFTCategory,
-
     children?: React.ReactNode
 }
 
@@ -15,20 +14,19 @@ type TileGalleryViewProps = {
  * Component to show a tile-style view of a group of NFTs. Main view used by categories on the gallery page.
  */
 const TileGalleryView = (props: TileGalleryViewProps) => {
-    const { nfts, name, description } = props.nftCategory
+    const { nfts, name, description, ordinal } = props.nftCategory
     const [showAll, setShowAll] = useState(false)
-
-    let i = 0
 
     // Don't show anything if there's no NFT data provided
     if(!nfts)
         return(<></>)
 
     const sortedNfts = nfts.sort((a,b) => a.name.localeCompare(b.name))
+    let i = 0
     
     return (
         <div>
-            <Heading size={2}>{name} ({nfts.length})</Heading>
+            <Heading size={2}><a id={"category" + ordinal}>{name} ({nfts.length})</a></Heading>
 
             <p className="text-md">{description || ""}</p>
 
