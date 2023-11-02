@@ -14,7 +14,7 @@ const NFTGallery = async () => {
                 <ul className="list-disc ml-4">
                     {nftCategories.map(categoryData => {
                         return(
-                            <li key={categoryData.name}><a href={"#category" + categoryData.ordinal} className="text-violet-400">{categoryData.name} ({categoryData.nfts.length})</a></li>
+                            <li key={categoryData.name}><a href={"#category" + categoryData.ordinal} className="text-violet-500 hover:text-violet-300">{categoryData.name} ({categoryData.nfts.length})</a></li>
                         )
                     })}
                 </ul>
