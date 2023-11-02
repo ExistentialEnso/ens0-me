@@ -4,6 +4,7 @@ import './globals.css'
 
 import HeaderBar from './components/HeaderBar'
 import Footer from './components/Footer'
+import HamburgerMenu from './components/HamburgerMenu'
 
 const radioCanada = Radio_Canada({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={radioCanada.className}>
                 <HeaderBar />
+                <HamburgerMenu />
                 {children}
                 <Footer />
             </body>
