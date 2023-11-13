@@ -19,7 +19,7 @@ const Footer = () => {
     ]
 
     return (
-        <div className="mx-auto container mt-8">
+        <div className="mx-auto container mt-16">
             <div className="p-6 w-full lg:w-6/12 lg:float-right lg:text-right">
                 <h5 className="text-xl mb-4">ens0cials</h5>
                 {socials.map((social, index) => (
