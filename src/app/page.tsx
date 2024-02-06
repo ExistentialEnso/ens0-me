@@ -71,7 +71,7 @@ export default function Home() {
         <Heading size={2}>& more</Heading>
 
         <ul className="list-disc ml-4">
-            <li><Link href="/nfts">NFT Collection</Link> - I love collecting digital art and have a gallery of featured pieces of my permanent collection.</li>
+            <li><Link href="/nfts">NFT Collection</Link> - I love collecting digital art and built a gallery of featured pieces of my permanent collection.</li>
         </ul>
     </main>
   )
