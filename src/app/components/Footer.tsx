@@ -10,6 +10,7 @@ const Footer = () => {
     const socials = [
         { url: 'https://github.com/ExistentialEnso', label: 'GitHub' },
         { url: 'https://www.x.com/existentialenso', label: 'X' },
+        { url: 'https://leetcode.com/ens0/', label: 'LeetCode' },
         { url: 'https://www.reddit.com/u/existentialenso/', label: 'Reddit' },
         { url: 'https://linkedin.com/in/ens0', label: 'LinkedIn' },
         { url: 'https://www.twitch.tv/ens0plays', label: 'Twitch' },
