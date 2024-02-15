@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
 
             <div className="p-6 w-full lg:w-6/12 lg:float-left">
-                &copy; 2021-2023 Thorne. All Rights Reserved.
+                &copy; 2021-2024 Thorne. All Rights Reserved.
             </div>
         </div>
     )
