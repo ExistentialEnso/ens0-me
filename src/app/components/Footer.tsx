@@ -15,8 +15,6 @@ const Footer = () => {
         { url: 'https://linkedin.com/in/ens0', label: 'LinkedIn' },
         { url: 'https://www.twitch.tv/ens0plays', label: 'Twitch' },
         { url: 'https://discord.com/users/248659552654852097', label: 'Discord' },
-        
-        // { url: 'https://www.instagram.com/existentialenso/', label: 'Instagram' },
     ]
 
     return (
