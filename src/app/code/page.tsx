@@ -113,6 +113,12 @@ const Code = () => {
 
             <br />
 
+            <Heading size={2}>🕸️ web apps</Heading>
+
+            <ul className="mb-8 ml-6 list-disc">
+                <li><Link href="https://smol3.com">smol3</Link> - web3 portal for smol farm projects. Built with Next, React, and TypeScript.</li>
+            </ul>
+
             <Heading size={2}>🎨 NFTs</Heading>
 
             <p className="mb-8">
