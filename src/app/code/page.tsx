@@ -119,6 +119,12 @@ const Code = () => {
                 <li><Link href="https://smol3.com">smol3</Link> - web3 portal for smol farm projects. Built with Next, React, and TypeScript.</li>
             </ul>
 
+            <Heading size={2}>🤖 artificial intelligence</Heading>
+
+            <ul className="mb-8 ml-6 list-disc">
+                <li><Link href="https://dan.dastardlyducks.com">Dan AI</Link> - one of the Dastardly Ducks brought to life with AI, with integrations with Bluesky and Discord.</li>
+            </ul>
+
             <Heading size={2}>🎨 NFTs</Heading>
 
             <p className="mb-8">
