@@ -29,7 +29,7 @@ const nfts = [
         externalURL: "https://moon.dastardlyducks.com",
         imageURL: "/projects/moonducks.png",
         contract: {
-            githubURL: "https://github.com/smolfarm-moonducks-contract",
+            githubURL: "https://github.com/smolfarm/moonducks-contract",
             etherscanURL: "https://etherscan.io/address/0x8cfc5be7d45ee598e3ec20f7a9ef03f1e2886582"
         },
         socials: {
@@ -116,8 +116,8 @@ const Code = () => {
             <Heading size={2}>🕸️ web apps</Heading>
 
             <ul className="mb-8 ml-6 list-disc">
-                <li><Link href="https://smol3.com">smol3</Link> - web3 portal for smol farm projects.</li>
-                <li><Link href="https://smol.quest">smol quest</Link> - gaming app that tracks achievements.</li>
+                <li><Link href="https://smol3.com">smol3</Link> - web3 portal for smol farm projects. Built all myself.</li>
+                <li><Link href="https://smol.quest">smol quest</Link> - gaming app that tracks achievements. Built all myself.</li>
             </ul>
 
             <Heading size={2}>🤖 artificial intelligence</Heading>
