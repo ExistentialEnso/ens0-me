@@ -3,7 +3,7 @@ import Heading from '../components/Heading'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Thorne | gaming',
+    title: 'Thorne 🌸 | gaming',
     description: 'Thorne is a passionate gamer from childhood. Watch her stream and track her gaming accomplishments!',
 }
 

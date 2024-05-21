@@ -3,7 +3,7 @@ import ContactForm from './ContactForm'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Thorne | contact',
+    title: 'Thorne 🌸 | contact',
     description: 'Get in touch with Thorne!',
 }
 
