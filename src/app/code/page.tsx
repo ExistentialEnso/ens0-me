@@ -5,7 +5,7 @@ import Heading from '../components/Heading'
 import Link from '../components/Link'
 
 export const metadata: Metadata = {
-    title: 'Thorne | code',
+    title: 'Thorne 🌸 | code',
     description: 'Thorne is an accomplished software engineer, and here is a sampling of work she has done.',
 }
 

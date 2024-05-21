@@ -3,7 +3,7 @@ import Heading from '../components/Heading'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Thorne | gaming',
+    title: 'Thorne 🌸 | gaming',
     description: 'Thorne is a passionate gamer from childhood. Watch her stream and track her gaming accomplishments!',
 }
 
@@ -20,8 +20,9 @@ export default function Gaming() {
 
         <ul className="list-disc ml-4">
             <li>Xbox: <Link href="https://smol.quest/gamertag/ens0plays">ens0plays</Link></li>
-            <li>Steam: <Link href="https://steamcommunity.com/id/existentialenso/">ExistentialEnso</Link></li>
-            <li>PSN: <Link href="https://www.truetrophies.com/gamer/ExistentialEnso">ExistentialEnso</Link></li>
+            <li>Steam: <Link href="https://smol.quest/steam/existentialenso/">ExistentialEnso</Link></li>
+            <li>PSN: <Link href="https://smol.quest/psn/ExistentialEnso">ExistentialEnso</Link></li>
+            <li>RetroAchievements: <Link href="https://smol.quest/ra/ens0">ens0</Link></li>
         </ul>
     </main>
   )
