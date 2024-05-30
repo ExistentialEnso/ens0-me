@@ -125,7 +125,7 @@ const Code = () => {
             <Heading size={2}>🤖 artificial intelligence</Heading>
 
             <div className="inline-block p-6 w-full lg:w-3/12 align-middle text-center text-2xl">
-                <Link href="https://dan.dastardlyducks.com"><Image width={400} height={400} src="/dan.png" alt="Dan the Duck" /></Link><br />
+                <Link href="https://dan.dastardlyducks.com"><Image className="rounded-lg" width={400} height={400} src="/dan.png" alt="Dan the Duck" /></Link><br />
                 <Link href="https://dan.dastardlyducks.com">Dan the Duck</Link><br />
                 <div className="my-2 text-lg">
                     Duck AI chatbot built in LangChain. Chats through Bluesky &amp; Discord.
@@ -141,7 +141,7 @@ const Code = () => {
             {nfts.map(nft => {
                 return(
                     <div key={nft.name} className="inline-block p-6 w-1/2 lg:w-3/12 min-h-[490px] align-middle text-center text-2xl">
-                        <Link href={nft.externalURL}><img src={nft.imageURL} alt={nft.name} /></Link><br />
+                        <Link href={nft.externalURL}><img src={nft.imageURL} alt={nft.name} className="rounded-lg" /></Link><br />
                         <Link href={nft.externalURL}>{nft.name}</Link><br />
                         <div className="my-2 text-lg">
                             {nft.description}

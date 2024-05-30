@@ -4,7 +4,7 @@ import NFT from './NFT'
 import NFTCategory from './NFTCategory'
 
 // Fallback URI using local MongoDB instance
-const LOCAL_URI = 'mongodb://localhost/ens0-site'
+const LOCAL_URI = 'mongodb://localhost/ens0-me'
 
 // Use Mongoose to connect to the database
 const MONGODB_URI = process.env.MONGODB_URI != null ? process.env.MONGODB_URI : LOCAL_URI
