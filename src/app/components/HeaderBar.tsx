@@ -15,16 +15,4 @@ const HeaderBar = () => {
     )
 }
 
-/*
-<Link href="/" className="text-2xl lg:text-3xl text-white hover:text-violet-200">Thorne</Link>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <Link href="/projects" className="text-lg lg:text-xl text-white hover:text-violet-400">code</Link>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <Link href="/gallery" className="text-lg lg:text-xl text-white hover:text-violet-400">collection</Link>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <Link href="/gaming" className="text-lg lg:text-xl text-white hover:text-violet-400">gaming</Link>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <Link href="/contact" className="text-lg lg:text-xl text-white hover:text-violet-400">contact</Link>
-            */
-
 export default HeaderBar
