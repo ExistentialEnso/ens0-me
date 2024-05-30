@@ -3,8 +3,10 @@ import type { Metadata } from 'next'
 
 import Heading from '../components/Heading'
 import Link from '../components/Link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
+
     title: 'Thorne 🌸 | code',
     description: 'Thorne is an accomplished software engineer, and here is a sampling of work she has done.',
 }
@@ -116,15 +118,19 @@ const Code = () => {
             <Heading size={2}>🕸️ web apps</Heading>
 
             <ul className="mb-8 ml-6 list-disc">
-                <li><Link href="https://smol3.com">smol3</Link> - web3 portal for smol farm projects. Built all myself.</li>
-                <li><Link href="https://smol.quest">smol quest</Link> - gaming app that tracks achievements. Built all myself.</li>
+                <li><Link href="https://smol3.com">smol3</Link> - web3 portal for smol farm projects. Built entirely myself.</li>
+                <li><Link href="https://smol.quest">smol quest</Link> - gaming app that tracks achievements. Built entirely myself.</li>
             </ul>
 
             <Heading size={2}>🤖 artificial intelligence</Heading>
 
-            <ul className="mb-8 ml-6 list-disc">
-                <li><Link href="https://dan.dastardlyducks.com">Dan AI</Link> - one of the Dastardly Ducks brought to life with AI, with integrations with Bluesky and Discord.</li>
-            </ul>
+            <div className="inline-block p-6 w-full lg:w-3/12 align-middle text-center text-2xl">
+                <Link href="https://dan.dastardlyducks.com"><Image width={400} height={400} src="/dan.png" alt="Dan the Duck" /></Link><br />
+                <Link href="https://dan.dastardlyducks.com">Dan the Duck</Link><br />
+                <div className="my-2 text-lg">
+                    Duck AI chatbot built in LangChain. Chats through Bluesky &amp; Discord.
+                </div>
+            </div>
 
             <Heading size={2}>🎨 NFTs</Heading>
 
@@ -152,26 +158,8 @@ const Code = () => {
             <p className="mb-8">
                 This site itself is a <Link href="https://github.com/ExistentialEnso/ens0-me">custom-built app</Link> using Next, React, and TypeScript.
             </p>
-
-            <br />
-
         </div>
     )
 }
 
 export default Code
-
-/*
-<Heading size={2}>🤖 artificial intelligence</Heading>
-
-            <p className="mb-8">
-                I am deeply interested in artificial intelligence, the area of software that excites me most and seems to hold the most potential.
-            </p>
-
-            <div className="inline-block p-6 w-full lg:w-3/12 align-middle text-center text-2xl">
-                <Link href="https://dan.dastardlyducks.com"><Image width={400} height={400} src="/dan.png" alt="Dan the Duck" /></Link><br />
-                <Link href="https://dan.dastardlyducks.com">Dan the Duck</Link><br />
-                <div className="my-2 text-lg">
-                    Duck AI chatbot built in LangChain. Chats through Bluesky &amp; Discord.
-                </div>
-            </div>*/

@@ -31,7 +31,7 @@ const HamburgerMenu = () => {
             <Link href="/" className="ml-4 text-2xl text-white align-middle font-bold">Thorne</Link>
             
             <motion.div animate={open ? 'open' : 'closed'} className="absolute left-0 top-[76px] w-[240px] h-[100%] px-5 py-3 bg-slate-100 dark:bg-slate-700 mt-[-4px]" style={menuStyle} variants={menuVariants}>
-                <Link onClick={() => setOpen(false)} href="/code" className="my-8 block text-xl text-slate-100 hover:text-slate-300">code</Link>
+                <Link onClick={() => setOpen(false)} href="/code" className="my-8 block text-xl text-slate-100 hover:text-slate-300">coding</Link>
                 <Link onClick={() => setOpen(false)} href="/gaming" className="my-8 block text-xl text-slate-100 hover:text-slate-300">gaming</Link>
                 <Link onClick={() => setOpen(false)} href="/contact" className="my-8 block text-xl text-slate-100 hover:text-slate-300s">contact</Link>
             </motion.div>
