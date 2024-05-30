@@ -152,9 +152,6 @@ const Code = () => {
             <p className="mb-8">
                 This site itself is a <Link href="https://github.com/ExistentialEnso/ens0-me">custom-built app</Link> using Next, React, and TypeScript.
             </p>
-
-            <br />
-
         </div>
     )
 }

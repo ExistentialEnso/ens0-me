@@ -1,19 +1,8 @@
-/**
- * 
- *                   _        ___                   
- *                  | |      / __)                  
- *   ___ ____   ___ | |    _| |__ _____  ____ ____  
- *  /___)    \ / _ \| |   (_   __|____ |/ ___)    \ 
- * |___ | | | | |_| | |     | |  / ___ | |   | | | |
- * (___/|_|_|_|\___/ \_)    |_|  \_____|_|   |_|_|_|
- * 
- * 
- * React component for displaying input fields on a form, handling things like different input types, error messages, and hints.
- *
- */
-
 import React from 'react'
 
+/**
+ * React component for displaying input fields on a form, handling things like different input types, error messages, and hints.
+ */
 type FormInputProps = {
     id: string,
     label: string,
