@@ -5,8 +5,7 @@ import Heading from './components/Heading'
 export default function Home() {
   return (
     <main className="container mx-auto pt-12 px-8">
-        <Image width={192} height={192} src="/selfie.jpg" className="rounded-full hidden lg:block lg:float-left m-8 w-48" alt="Selfie of me." />
-        <Image width={192} height={192} src="/natsuko.png" className="rounded-full hidden lg:block lg:float-right m-8 w-48" alt="Natsuko, a Galverse NFT of mine." />
+        <Image width={192} height={192} src="/selfie.jpg" className="rounded-full lg:float-left m-8 w-72 lg:w-48" alt="Selfie of me." />
 
         <Heading size={1}>Thorne</Heading>
         <Heading size={3}>ens0 🌸 metro ATL 🌸 she/her</Heading>
@@ -14,19 +13,6 @@ export default function Home() {
         <p className="mb-12">
             Renaissance woman &amp; geek with a diverse array of expertise and successes. Primary passions are coding and writing. Always learning, always creating, &amp; always building. Dedicated to building a better, more inclusive world for all.
         </p>
-
-        <Image
-            width={192}
-            height={192}
-            src="/selfie.jpg"
-            className="rounded-full lg:hidden float-left m-2 w-4/12"
-            alt="Selfie of me." />
-        <Image
-            width={192}
-            height={192}
-            src="/natsuko.png"
-            className="rounded-full lg:hidden
-            float-right m-2 w-4/12" alt="Natsuko, a Shinsei Galverse pfp of mine." />
 
         <div className="clear-both"></div>
 
