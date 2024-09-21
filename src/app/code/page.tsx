@@ -119,7 +119,7 @@ const Code = () => {
 
             <ul className="mb-8 ml-6 list-disc">
                 <li><Link href="https://smol3.com">smol3</Link> - web3 portal for smol farm&lsquo;s blockchain projects. Built entirely myself in Next.js &amp; TypeScript.</li>
-                <li><Link href="https://smol.quest">smol quest</Link> - gaming app that tracks achievements across Playstation, Xbox, Steam, and RetroAchievements. Built entirely myself in Next.js &amp; TypeScript.</li>
+                <li><Link href="https://smol.quest">smol quest</Link> - gaming app that tracks achievements across Playstation, Xbox, Steam, and RetroAchievements and enables you to rate games and follow friends. Built entirely myself in Next.js &amp; TypeScript.</li>
             </ul>
 
             <Heading size={2}>🤖 artificial intelligence</Heading>

@@ -13,7 +13,7 @@ export default function Gaming() {
         <Heading size={1}>gaming</Heading>
 
         <p className="mb-12">
-            I have been a passionate gamer since I was a kid. I like having new and interesting ways to challenge and stimulate my brain and think gaming is an important form of exercise for the brain. I sometimes stream, so be sure to follow me on <Link href="https://twitch.tv/ens0plays">Twitch</Link>! I also built <Link href="https://smol.quest">smol quest</Link> to track game and achievement info.
+            I have been a passionate gamer since I was a kid. I like having new and interesting ways to challenge and stimulate my brain and think gaming is an important form of exercise for the brain. I sometimes stream, so be sure to follow me on <Link href="https://twitch.tv/ens0plays">Twitch</Link>! I also built <Link href="https://smol.quest">smol quest</Link> to enable you to track achievements, rate games, and follow friends across platforms.
         </p>
 
         <Heading size={2}>🎮 accounts</Heading>
